@@ -1,0 +1,22 @@
+# User specific & automatically generated files #
+#################################################
+/Config/database.php
+/Config/database.php.default
+/Config/core.php
+/Config/email.php
+/Config/email.php.default
+/tmp
+/Vendor
+/webroot/secure
+/build
+/dist
+/tags
+*.mo
+*.po
+
+# IDE and editor specific files #
+#################################
+
+
+# OS generated files #
+######################
