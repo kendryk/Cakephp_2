@@ -48,6 +48,8 @@ Look okay? (y/n/q)
 
 Et entrez simplement **y** lorsque vous y êtes invité.
 
+***********************
+
 ```
 ---------------------------------------------------------------
 Created: app in /Users/onoblog/codes/cakephp-app/.
@@ -64,12 +66,41 @@ You can fix this by adding CakePHP to your `include_path`.
 Project baked successfully!
 ```
 
+***********************
 N'oubliez pas de créer le fichier de configuration de la base de données !
 
 ```
 cp Config/database.php.default Config/database.php
 ```
+Et aussi, si vous utilisez un gestionnaire de version comme **Git** , n'oubliez pas d'ignorer le  répertoire **Vendor** et  **tmp**  
 
+
+********************************************************************************************************************
 Et c'est tout! Il ne vous reste plus qu'à mettre à jour la configuration de la base de données avec les informations d'identification valides de la base de données.
 
-Et aussi, si vous utilisez un gestionnaire de version comme **Git** , n'oubliez pas d'ignorer le  répertoire **Vendor** et  **tmp**  .
+```
+  class DATABASE_CONFIG {
+
+	public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => 'root',
+		'database' => 'Cake_php_2',
+		'prefix' => '',
+		//'encoding' => 'utf8',
+	);
+
+	public $test = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => 'root',
+		'database' => 'test',
+		'prefix' => '',
+		//'encoding' => 'utf8',
+	);
+}
+```
