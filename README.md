@@ -5,7 +5,7 @@ Crétaion d'un site web sous cakephp
 Tout d'abord, nous devons créer le répertoire du projet :
 
 ```
-mkdir cakephp-app && cd cakephp-app
+mkdir Cakephp_2 && cd Cakephp_2
 ```
 
 Maintenant, la commande ci-dessous va créer un fichier **composer.json** avec **cakephp** comme dépendance. Le **–no-update** l'empêchera d'installer les dépendances dans le répertoire par défaut :
